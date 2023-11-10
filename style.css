@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: rgb(32, 83, 83);
+}
+
+.quote-box {
+    background-color: rgb(196, 110, 110);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Caveat', cursive;
+}
+
+blockquote {
+    font-size: 23px;
+    font-family: 'Caveat', cursive;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4vw;
+}
+
+.flex div:empty {
+    background-color: rgb(32, 83, 83);
+    height: 2px;
+    width: 80px;
+    margin-top: 5px;
+}
+
+blockquote::after,
+blockquote::before {
+    content: '"';
+}
+
+.flex-span {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-family: 'Caveat', cursive;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    font-family: 'Caveat', cursive;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 18px;
+    width: 30%;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(32, 83, 83);
+    color: rgb(196, 110, 110);
+}
+
+button img {
+    width: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .quote-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 300px) {
+    button {
+        font-size: 15px;
+    }
+}
